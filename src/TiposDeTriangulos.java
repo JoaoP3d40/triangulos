@@ -24,10 +24,10 @@ public class TiposDeTriangulos {
 
             if(ladoA == ladoB && ladoA == ladoC && ladoB == ladoC){
                 System.out.println("É um triangulo Equilátero");
-            } else if (ladoA != ladoB && ladoB != ladoC && ladoA != ladoC) {
-                System.out.println("É um triangulo Escaleno");
-            } else   {
+            } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
                 System.out.println("É um triangulo Isóceles");
+            } else   {
+                System.out.println("É um triangulo Escaleno");
             }
 
         }else {
